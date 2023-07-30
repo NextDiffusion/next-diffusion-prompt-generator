@@ -1,0 +1,173 @@
+{
+    "abstract": [
+        [
+            "Non-representational",
+            "Non-objective",
+            "Experimental",
+            "Conceptual",
+            "Non-figurative"
+        ]
+    ],
+    "chalk painting": [
+        [
+            "Chalk art",
+            "Sidewalk art",
+            "Pavement art",
+            "Chalk mural",
+            "Chalk drawing"
+        ]
+    ],
+    "color splash": [
+        [
+            "Color pop",
+            "Selective color",
+            "Color highlight",
+            "Vibrant color",
+            "Color accent"
+        ]
+    ],
+    "concept art": [
+        [
+            "Conceptual art",
+            "Artwork",
+            "Design concept",
+            "Visual representation",
+            "Illustrative concept"
+        ]
+    ],
+    "digital artwork": [
+        [
+            "Digital creation",
+            "Digital illustration",
+            "Digital design",
+            "Digital masterpiece",
+            "Digital masterpiece"
+        ]
+    ],
+    "drawing": [
+        [
+            "Sketch",
+            "Illustration",
+            "Artwork",
+            "Pencil drawing",
+            "Hand-drawn image"
+        ]
+    ],
+    "drone photo": [
+        [
+            "Aerial photo",
+            "Drone shot",
+            "Quadcopter photo",
+            "Birds-eye view photo",
+            "Dronography"
+        ]
+    ],
+    "fractal": [
+        [
+            "Fractal art",
+            "Mathematical art",
+            "Complex geometry",
+            "Self-similar pattern",
+            "Fractal visualization"
+        ]
+    ],
+    "oil painting": [
+        [
+            "Oil artwork",
+            "Canvas painting",
+            "Traditional painting",
+            "Impressionist painting",
+            "Oil on canvas"
+        ]
+    ],
+    "painting": [
+        [
+            "Artwork",
+            "Canvas painting",
+            "Fine art",
+            "Traditional painting",
+            "Painterly creation"
+        ]
+    ],
+    "pastels artwork": [
+        [
+            "Pastel painting",
+            "Soft pastels art",
+            "Pastel creation",
+            "Colorful pastel art",
+            "Chalk pastels drawing"
+        ]
+    ],
+    "pencil painting": [
+        [
+            "Pencil art",
+            "Sketch",
+            "Shading art",
+            "Pencil illustration",
+            "Graphite drawing"
+        ]
+    ],
+    "photograph": [
+        [
+            "Photo",
+            "Picture",
+            "Image",
+            "Snapshot",
+            "Capture"
+        ]
+    ],
+    "portrait": [
+        [
+            "Portraiture",
+            "Character study",
+            "Human likeness",
+            "Person depiction",
+            "Portrait artwork"
+        ]
+    ],
+    "raw photo": [
+        [
+            "Unprocessed photo",
+            "Original photo",
+            "Untouched photo",
+            "RAW Image",
+            "Unedited photo"
+        ]
+    ],
+    "spray paint style": [
+        [
+            "Graffiti style",
+            "Urban art style",
+            "Spray paint technique",
+            "Street art approach",
+            "Spray art"
+        ]
+    ],
+    "vector art": [
+        [
+            "Vector illustration",
+            "Vector graphics",
+            "Digital vector",
+            "Scalable art",
+            "Geometric design"
+        ]
+    ],
+    "wall graffiti": [
+        [
+            "Street art",
+            "Mural",
+            "Spray paint art",
+            "Urban art",
+            "Graffiti artwork"
+        ]
+    ],
+    "water color painting": [
+        [
+            "Watercolor artwork",
+            "Aquarelle painting",
+            "Watercolor creation",
+            "Wash painting",
+            "Transparent painting"
+        ]
+    ]
+}

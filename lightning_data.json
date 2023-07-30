@@ -1,0 +1,380 @@
+{
+    "accent lighting": [
+        [
+            "Highlighting light",
+            "Emphasis illumination",
+            "Feature lighting",
+            "Focal point light",
+            "Accentuated glow"
+        ]
+    ],
+    "back-light": [
+        [
+            "Rim light",
+            "Silhouette effect",
+            "Separation light",
+            "Halo effect",
+            "Glow from behind"
+        ]
+    ],
+    "beautifully lit": [
+        [
+            "Gorgeously illuminated",
+            "Stunning light",
+            "Exquisitely lit",
+            "Beautiful glow",
+            "Radiant illumination"
+        ]
+    ],
+    "bloom light": [
+        [
+            "Glowing light",
+            "Radiant illumination",
+            "Soft glow",
+            "Light halo",
+            "Luminous effect"
+        ]
+    ],
+    "broad lighting": [
+        [
+            "Wide lighting",
+            "Full-face illumination",
+            "Frontal light",
+            "Evenly lit",
+            "Generally bright"
+        ]
+    ],
+    "candle light": [
+        [
+            "Candlelit",
+            "Soft candlelight",
+            "Warm glow",
+            "Flickering light",
+            "Cozy illumination"
+        ]
+    ],
+    "cinematic lighting": [
+        [
+            "Dramatic lighting",
+            "Mood lighting",
+            "Filmic illumination",
+            "Cinematic atmosphere",
+            "Evocative lighting"
+        ]
+    ],
+    "direct light": [
+        [
+            "Primary light",
+            "Main illumination",
+            "Straight light",
+            "Focused lighting",
+            "Direct beam"
+        ]
+    ],
+    "dramatic lighting": [
+        [
+            "Intense lighting",
+            "High contrast illumination",
+            "Dynamic light",
+            "Theatrical lighting",
+            "Striking illumination"
+        ]
+    ],
+    "ethereal lighting": [
+        [
+            "Otherworldly illumination",
+            "Dreamlike light",
+            "Ethereal glow",
+            "Transcendent atmosphere",
+            "Magical lighting"
+        ]
+    ],
+    "flat lighting": [
+        [
+            "Even lighting",
+            "No shadows",
+            "Uniform illumination",
+            "Low contrast lighting",
+            "Smooth lighting"
+        ]
+    ],
+    "gel lighting": [
+        [
+            "Colored lighting",
+            "Gel filter",
+            "Color gel",
+            "Tinted illumination",
+            "Colorful light"
+        ]
+    ],
+    "hair light": [
+        [
+            "Back light",
+            "Rim light",
+            "Highlight hair",
+            "Accentuate hair",
+            "Illuminate hair"
+        ]
+    ],
+    "hard light": [
+        [
+            "Direct light",
+            "Focused illumination",
+            "Strong lighting",
+            "Harsh lighting",
+            "Sharp light"
+        ]
+    ],
+    "indirect light": [
+        [
+            "Ambient light",
+            "Scattered illumination",
+            "Reflected light",
+            "Soft lighting",
+            "Diffused glow"
+        ]
+    ],
+    "key light": [
+        [
+            "Main light",
+            "Primary light",
+            "Dominant illumination",
+            "Key source",
+            "Keying light"
+        ]
+    ],
+    "light caustics": [
+        [
+            "Light patterns",
+            "Light reflections",
+            "Light refractions",
+            "Water caustics",
+            "Sparkling light"
+        ]
+    ],
+    "loop lighting": [
+        [
+            "Loop shadow",
+            "Loop highlight",
+            "Crescent light",
+            "Continuous light",
+            "Curved light"
+        ]
+    ],
+    "moody lighting": [
+        [
+            "Atmospheric lighting",
+            "Emotive illumination",
+            "Expressive light",
+            "Dramatic atmosphere",
+            "Evocative lighting"
+        ]
+    ],
+    "moonlight": [
+        [
+            "Moonlit",
+            "Lunar illumination",
+            "Nighttime glow",
+            "Moonbeam",
+            "Moonlit atmosphere"
+        ]
+    ],
+    "moonlit": [
+        [
+            "Moonlight",
+            "Lunar illumination",
+            "Nighttime glow",
+            "Moonbeam",
+            "Moonlit atmosphere"
+        ]
+    ],
+    "motion blur": [
+        [
+            "Blurry motion",
+            "Movement blur",
+            "Dynamic blur",
+            "Action blur",
+            "Speed blur"
+        ]
+    ],
+    "natural lighting": [
+        [
+            "Ambient lighting",
+            "Daylight",
+            "Sunlight",
+            "Outdoor lighting",
+            "Soft natural light"
+        ]
+    ],
+    "neon light": [
+        [
+            "Neon illumination",
+            "Glowing light",
+            "Vibrant glow",
+            "Fluorescent lighting",
+            "Electrifying light"
+        ]
+    ],
+    "nostalgic lighting": [
+        [
+            "Retro lighting",
+            "Vintage illumination",
+            "Old-fashioned light",
+            "Nostalgic atmosphere",
+            "Antique glow"
+        ]
+    ],
+    "random": null,
+    "reflected light": [
+        [
+            "Reflected illumination",
+            "Bounce light",
+            "Indirect lighting",
+            "Mirror reflection",
+            "Secondary light"
+        ]
+    ],
+    "rim light": [
+        [
+            "Backlighting",
+            "Edge light",
+            "Outline light",
+            "Contour light",
+            "Highlight from behind"
+        ]
+    ],
+    "short lighting": [
+        [
+            "Narrow lighting",
+            "Side-facing illumination",
+            "Partial light",
+            "Focused on shadow side",
+            "Dramatic shadows"
+        ]
+    ],
+    "side light": [
+        [
+            "Sideways lighting",
+            "Lateral illumination",
+            "Cross-lighting",
+            "Off-axis lighting",
+            "Directional light"
+        ]
+    ],
+    "side lit": [
+        [
+            "Sideways lit",
+            "Lateral lit",
+            "Cross-lit",
+            "Off-axis lit",
+            "Directionally lit"
+        ]
+    ],
+    "side lighting": [
+        [
+            "Lateral illumination",
+            "Sideways light",
+            "Cross-lighting",
+            "Off-axis lighting",
+            "Directional light"
+        ]
+    ],
+    "soft light": [
+        [
+            "Diffused light",
+            "Gentle light",
+            "Subtle illumination",
+            "Mild lighting",
+            "Feathered light"
+        ]
+    ],
+    "soft lighting": [
+        [
+            "Diffused lighting",
+            "Gentle illumination",
+            "Subtle lighting",
+            "Mild lighting",
+            "Feathered lighting"
+        ]
+    ],
+    "specular lighting": [
+        [
+            "Shiny light",
+            "Reflective illumination",
+            "Gleaming light",
+            "Highlights and reflections",
+            "Glossy lighting"
+        ]
+    ],
+    "split lighting": [
+        [
+            "Divided lighting",
+            "Two-sided illumination",
+            "Contrasting light and shadow",
+            "Halves light",
+            "Distinct separation"
+        ]
+    ],
+    "spotlight": [
+        [
+            "Focused light",
+            "Center of attention",
+            "Highlighting",
+            "Beam of light",
+            "Spot illumination"
+        ]
+    ],
+    "spotlit": [
+        [
+            "Spotlighted",
+            "Focused light",
+            "Highlighted",
+            "Center of attention",
+            "Lit up"
+        ]
+    ],
+    "studio lighting": [
+        [
+            "Professional lighting",
+            "Controlled illumination",
+            "Photography lighting",
+            "Controlled light"
+        ]
+    ],
+    "sun rays": [
+        [
+            "Sunbeams",
+            "Sunshine rays",
+            "Sunlight beams",
+            "Golden light",
+            "Sun shafts"
+        ]
+    ],
+    "sunlight": [
+        [
+            "Sunshine",
+            "Daylight",
+            "Sun rays",
+            "Bright light",
+            "Sunny illumination"
+        ]
+    ],
+    "volumetric lighting": [
+        [
+            "God rays",
+            "Light scattering",
+            "Atmospheric illumination",
+            "Beam of light",
+            "Hazy lighting"
+        ]
+    ],
+    "waning light": [
+        [
+            "Diminishing light",
+            "Fading illumination",
+            "Weakening glow",
+            "Waning sun",
+            "Declining light"
+        ]
+    ]
+}

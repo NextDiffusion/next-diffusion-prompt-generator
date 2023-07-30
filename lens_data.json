@@ -1,0 +1,156 @@
+{
+    "35mm": [
+        [
+            "Wide-angle lens",
+            "Panoramic view",
+            "Wide angle"
+        ]
+    ],
+    "50mm": [
+        [
+            "Standard lens",
+            "Nifty fifty",
+            "Versatile focal length",
+            "Natural field of view"
+        ]
+    ],
+    "80mm": [
+        [
+            "Portrait lens",
+            "Medium telephoto",
+            "Flattering focal length"
+        ]
+    ],
+    "800mm lens": [
+        [
+            "Super telephoto lens",
+            "Extreme reach",
+            "Distant subjects"
+        ]
+    ],
+    "circular polarizer": [
+        [
+            "Polarizing filter",
+            "Reduced reflections",
+            "Enhanced colors",
+            "Increased contrast",
+            "Blue sky enhancement"
+        ]
+    ],
+    "depth of field 100mm": [
+        [
+            "Shallow depth of field",
+            "Narrow depth of field",
+            "Wide aperture",
+            "Blurry background",
+            "Isolated subject"
+        ]
+    ],
+    "depth of field 270mm": [
+        [
+            "Deep depth of field",
+            "Extended depth of field",
+            "Small aperture",
+            "Sharp from front to back"
+        ]
+    ],
+    "f/1.8": [
+        [
+            "Wide aperture",
+            "Shallow depth of field",
+            "Low-light photography",
+            "Subject isolation",
+            "Creative bokeh"
+        ]
+    ],
+    "f/2.8": [
+        [
+            "Fast lens",
+            "Wide aperture",
+            "Low-light photography",
+            "Shallow depth of field",
+            "Zoom lens"
+        ]
+    ],
+    "f/5": [
+        [
+            "Moderate aperture",
+            "Balanced depth of field",
+            "Versatile for different scenes",
+            "Sharpness throughout"
+        ]
+    ],
+    "f/8": [
+        [
+            "Optimal aperture",
+            "Sharpness across the frame",
+            "Good depth of field"
+        ]
+    ],
+    "f/14": [
+        [
+            "Narrow aperture",
+            "Wide depth of field",
+            "Range depth of field"
+        ]
+    ],
+    "fish-eye lens": [
+        [
+            "Ultra-wide-angle lens",
+            "Extreme perspective distortion",
+            "Unique visual effect",
+            "360-degree photography",
+            "Creative compositions"
+        ]
+    ],
+    "l usm": [
+        [
+            "Ultrasonic motor",
+            "Fast and silent autofocus",
+            "High-performance lens",
+            "Precise focusing",
+            "Professional-grade optics"
+        ]
+    ],
+    "low shutter": [
+        [
+            "Slow shutter speed",
+            "Long exposure",
+            "Motion blur",
+            "Light trails",
+            "Creative effects"
+        ]
+    ],
+    "macro lens": [
+        [
+            "Close-up lens",
+            "High magnification",
+            "Small details"
+        ]
+    ],
+    "selective focus": [
+        [
+            "Bokeh effect",
+            "Subject separation",
+            "Background blur",
+            "Creatively controlling focus",
+            "Artistic photography"
+        ]
+    ],
+    "telephoto lens": [
+        [
+            "Long focal length lens",
+            "Magnification",
+            "Compressed perspective"
+        ]
+    ],
+    "zoom lens": [
+        [
+            "Telephoto lens",
+            "Wide-angle lens",
+            "Prime lens",
+            "Variable focal length lens",
+            "Optical zoom"
+        ]
+    ]
+}
