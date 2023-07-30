@@ -100,7 +100,7 @@ def generate_prompt_output(*args):
     with open(lightning_path, 'r') as f4:
         lightning_data = json.load(f4)
     
-    if style == "random":
+    if lightning == "random":
         lightning_prompt = get_random_prompt(lightning_data)
     else:
         lightning_prompt = get_correct_prompt(lightning_data, lightning)
@@ -109,7 +109,7 @@ def generate_prompt_output(*args):
     with open(lens_path, 'r') as f5:
         lens_data = json.load(f5)
     
-    if style == "random":
+    if lens == "random":
         lens_prompt = get_random_prompt(lens_data)
     else:
         lens_prompt = get_correct_prompt(lens_data, lens)
