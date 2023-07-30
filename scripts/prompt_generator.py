@@ -51,6 +51,8 @@ def get_correct_prompt(data, selected_dropdown):
     correct_array = data[selected_dropdown]
     random_array = random.choice(correct_array)
     random_strings = random.sample(random_array, 3)
+    random_strings.insert(0, selected_dropdown)
+    
     return random_strings
 
 def generate_prompt_output(*args):
@@ -73,7 +75,7 @@ def generate_prompt_output(*args):
     # Open category_data.json and grab correct text
     with open(prefix_path, 'r') as f:
         prefix_data = json.load(f)
-        prefix_prompt = random.sample(prefix_data, 3)
+        prefix_prompt = random.sample(prefix_data, 6)
         modified_prefix_prompt = [f"(({item}))" for item in prefix_prompt]
 
 
