@@ -172,6 +172,6 @@ def on_ui_tabs():
         # Register the callback for the Generate button
         generate_button.click(fn=generate_prompt_output, inputs=[category_dropdown, style_dropdown, lightning_dropdown, lens_dropdown], outputs=[result_textbox])
 
-    return (prompt_generator, "❤️ Next Diffusion ❤️", "❤️ Next Diffusion ❤️"),
+    return (prompt_generator, "Next Diffusion ⚡", "Next Diffusion ⚡"),
 
 script_callbacks.on_ui_tabs(on_ui_tabs)
