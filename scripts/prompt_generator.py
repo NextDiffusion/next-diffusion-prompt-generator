@@ -1,6 +1,6 @@
 import json
-import re
 import random
+from tkinter import TRUE
 import gradio as gr
 import modules
 from pathlib import Path
@@ -38,9 +38,15 @@ def populate_dropdown_options():
     return tuple(category_choices), tuple(style_choices), tuple(lightning_choices), tuple(lens_choices),
 
 
-def add_to_prompt(prompt):  # A holder TODO figure out how to get rid of it
-    return prompt
-
+def add_to_prompt(*args): 
+    prompt, use_default_negative_prompt = args
+    default_negative_prompt = "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1), (greyscale), multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, watermark"
+    if(use_default_negative_prompt):
+        return prompt, default_negative_prompt
+    else:
+        return prompt, "" 
+    
+    
 def get_random_prompt(data):
     random_key = random.choice(list(data.keys()))
     random_array = random.choice(data[random_key])
@@ -64,7 +70,7 @@ def generate_prompt_output(*args):
     lens_path = lens_data_file
 
     #destructure args
-    category, style, lightning, lens = args
+    category, style, lightning, lens, negative_prompt = args
 
     # Convert variables to lowercase
     category = category.lower()
@@ -129,6 +135,11 @@ def on_ui_tabs():
     txt2img_prompt = modules.ui.txt2img_paste_fields[0][0]
     img2img_prompt = modules.ui.img2img_paste_fields[0][0]
 
+    txt2img_negative_prompt = modules.ui.txt2img_paste_fields[1][0]
+    img2img_negative_prompt = modules.ui.img2img_paste_fields[1][0]
+
+    
+
     with gr.Blocks(analytics_enabled=False) as prompt_generator:
         with gr.Tab("Prompt Generator"):
             with gr.Row():  # Use Row to arrange two columns side by side
@@ -159,20 +170,22 @@ def on_ui_tabs():
                             value=lens_choices[0],
                             label="Lens", show_label=True
                         )
-                    generate_button = gr.Button(value="Generate", elem_id="generate_button")
+                    
                 with gr.Column():  # Right column for result_textbox and generate_button
                     # Add a Textbox to display the generated text
-                    result_textbox = gr.Textbox(label="Generated Prompt", lines=4)
+                    result_textbox = gr.Textbox(label="Generated Prompt", lines=3)
+                    use_default_negative_prompt = gr.Checkbox(label="Use default negative prompt?", value=True, interactive=True)
+                    setattr(use_default_negative_prompt,"do_not_save_to_config",True)
                     with gr.Row():
                         txt2img = gr.Button("Send to txt2img")
                         img2img = gr.Button("Send to img2img")
                     # Create a button to trigger text generation
-                    txt2img.click(add_to_prompt, inputs=[result_textbox], outputs=[txt2img_prompt]).then(None, _js='switch_to_txt2img',inputs=None, outputs=None)
-                    img2img.click(add_to_prompt, inputs=[result_textbox], outputs=[img2img_prompt]).then(None, _js='switch_to_img2img',inputs=None, outputs=None)
-                    
+                    txt2img.click(add_to_prompt, inputs=[result_textbox, use_default_negative_prompt], outputs=[txt2img_prompt, txt2img_negative_prompt ]).then(None, _js='switch_to_txt2img',inputs=None, outputs=None)
+                    img2img.click(add_to_prompt, inputs=[result_textbox, use_default_negative_prompt], outputs=[img2img_prompt, img2img_negative_prompt]).then(None, _js='switch_to_img2img',inputs=None, outputs=None)
+                    generate_button = gr.Button(value="Generate", elem_id="generate_button")
 
         # Register the callback for the Generate button
-        generate_button.click(fn=generate_prompt_output, inputs=[category_dropdown, style_dropdown, lightning_dropdown, lens_dropdown], outputs=[result_textbox])
+        generate_button.click(fn=generate_prompt_output, inputs=[category_dropdown, style_dropdown, lightning_dropdown, lens_dropdown, use_default_negative_prompt], outputs=[result_textbox])
 
     return (prompt_generator, "Next Diffusion ⚡", "Next Diffusion ⚡"),
 
