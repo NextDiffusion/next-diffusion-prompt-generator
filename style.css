@@ -1,17 +1,43 @@
 /* Apply background color to the button */
 #generate_button {
-    background-color: #FF822D;
-    color: white;
-    padding: 20px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background: #FF822D !important;
+    color: white !important;
+    padding: 20px 20px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s !important;
 }
 
+/* Apply hover effect on the button */
+#generate_button:hover {
+    background: #FF822D !important;
+}
 
 /* Apply custom appearance when the checkbox is checked */
-input[type="checkbox"]:checked {
+#negative_prompt_checkbox input[type="checkbox"]:checked {
     background-color: #FF822D !important;
-    color: #FF822D !important;
+    color: white !important;
     border-color: #FF822D !important;
+}
+
+#website_button,
+#youtube_button {
+    border: var(--button-border-width) solid var(--button-secondary-border-color);
+    background: var(--button-secondary-background-fill);
+    color: var(--button-secondary-text-color);
+    border-radius: var(--button-large-radius);
+    padding: var(--button-large-padding);
+    font-weight: var(--button-large-text-weight);
+    font-size: var(--button-large-text-size);
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    min-width: min(160px, 100%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--button-transition);
+    box-shadow: var(--button-shadow);
+    padding: var(--size-0-5) var(--size-2);
+    text-align: center;
+    cursor: pointer;
 }

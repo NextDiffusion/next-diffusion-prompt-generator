@@ -171,10 +171,25 @@ def on_ui_tabs():
                             label="Lens", show_label=True
                         )
                     
+                    
+                    with gr.Row(): 
+                        gr.HTML('''
+                        <h3>Stable Diffusion Tutorials⚡:</h3>
+                        <container>
+                            <a href="https://nextdiffusion.ai" target="_blank">
+                                <button id="website_button" class="external-link">Website</button>
+                            </a>
+                            <a href="https://www.youtube.com/@NextDiffusion" target="_blank">
+                                <button id="youtube_button" class="external-link">YouTube</button>
+                            </a>
+                        </container>
+                    ''')
+                        
+                    
                 with gr.Column():  # Right column for result_textbox and generate_button
                     # Add a Textbox to display the generated text
                     result_textbox = gr.Textbox(label="Generated Prompt", lines=3)
-                    use_default_negative_prompt = gr.Checkbox(label="Use default negative prompt?", value=True, interactive=True)
+                    use_default_negative_prompt = gr.Checkbox(label="Use default negative prompt?", value=True, interactive=True, elem_id="negative_prompt_checkbox")
                     setattr(use_default_negative_prompt,"do_not_save_to_config",True)
                     with gr.Row():
                         txt2img = gr.Button("Send to txt2img")
@@ -183,6 +198,7 @@ def on_ui_tabs():
                     txt2img.click(add_to_prompt, inputs=[result_textbox, use_default_negative_prompt], outputs=[txt2img_prompt, txt2img_negative_prompt ]).then(None, _js='switch_to_txt2img',inputs=None, outputs=None)
                     img2img.click(add_to_prompt, inputs=[result_textbox, use_default_negative_prompt], outputs=[img2img_prompt, img2img_negative_prompt]).then(None, _js='switch_to_img2img',inputs=None, outputs=None)
                     generate_button = gr.Button(value="Generate", elem_id="generate_button")
+                    
 
         # Register the callback for the Generate button
         generate_button.click(fn=generate_prompt_output, inputs=[category_dropdown, style_dropdown, lightning_dropdown, lens_dropdown, use_default_negative_prompt], outputs=[result_textbox])
