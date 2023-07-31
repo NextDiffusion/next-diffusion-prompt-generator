@@ -21,6 +21,7 @@
 }
 
 
+#website_button,
 #youtube_button {
     border: var(--button-border-width) solid var(--button-secondary-border-color);
     background: var(--button-secondary-background-fill);
@@ -41,26 +42,8 @@
     cursor: pointer;
 }
 
-#website_button {
-    border: var(--button-border-width) solid var(--button-secondary-border-color);
-    background: #FF822D;
-    color: var(--button-secondary-text-color);
-    border-radius: var(--button-large-radius);
-    font-weight: var(--button-large-text-weight);
-    font-size: var(--button-large-text-size);
-    flex: 1 1 0%;
-    flex-wrap: wrap;
-    min-width: min(160px, 100%);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--button-transition);
-    box-shadow: var(--button-shadow);
-    padding: var(--size-0-5) var(--size-2);
-    text-align: center;
-    cursor: pointer;
-}
 
+#website_button,
 #youtube_button:hover {
     background: #FF822D !important;
 }

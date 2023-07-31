@@ -197,7 +197,7 @@ def on_ui_tabs():
                 with gr.Column():  # Right column for result_textbox and generate_button
                     # Add a Textbox to display the generated text
                     with gr.Row():
-                        gr.HTML('''<h2 id="output_header">Prompt Output 👇</h2>''')
+                        gr.HTML('''<h2 id="output_header">Output 👋</h2>''')
                     result_textbox = gr.Textbox(label="Generated Prompt", lines=3)
                     use_default_negative_prompt = gr.Checkbox(label="Include Negative Prompt", value=True, interactive=True, elem_id="negative_prompt_checkbox")
                     setattr(use_default_negative_prompt,"do_not_save_to_config",True)
