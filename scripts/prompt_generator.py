@@ -145,8 +145,12 @@ def on_ui_tabs():
             with gr.Row():  # Use Row to arrange two columns side by side
                 with gr.Column():  # Left column for dropdowns
                     category_choices, style_choices, lightning_choices, lens_choices = populate_dropdown_options()
-                    with gr.Row():  # Place dropdowns side by side
+                    
+                    with gr.Row():
+                        gr.HTML('''<h2 id="input_header">Input 👇</h2>''')
+                    with gr.Row().style(equal_height=True):  # Place dropdowns side by side
                         # Create a dropdown to select
+                        
                         category_dropdown = gr.Dropdown(
                             choices=category_choices,
                             value=category_choices[0],
@@ -170,9 +174,12 @@ def on_ui_tabs():
                             value=lens_choices[0],
                             label="Lens", show_label=True
                         )
-                    
-                    
                     with gr.Row(): 
+                        gr.HTML('''
+                        <hr class="rounded" id="divider">
+                    ''')
+                        
+                    with gr.Row():
                         gr.HTML('''
                         <h3>Stable Diffusion Tutorials⚡</h3>
                         <container>
@@ -188,8 +195,10 @@ def on_ui_tabs():
                     
                 with gr.Column():  # Right column for result_textbox and generate_button
                     # Add a Textbox to display the generated text
+                    with gr.Row():
+                        gr.HTML('''<h2 id="output_header">Prompt Output</h2>''')
                     result_textbox = gr.Textbox(label="Generated Prompt", lines=3)
-                    use_default_negative_prompt = gr.Checkbox(label="Use default negative prompt?", value=True, interactive=True, elem_id="negative_prompt_checkbox")
+                    use_default_negative_prompt = gr.Checkbox(label="Include Negative Prompt?", value=True, interactive=True, elem_id="negative_prompt_checkbox")
                     setattr(use_default_negative_prompt,"do_not_save_to_config",True)
                     with gr.Row():
                         txt2img = gr.Button("Send to txt2img")

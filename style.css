@@ -20,13 +20,12 @@
     border-color: #FF822D !important;
 }
 
-#website_button,
+
 #youtube_button {
     border: var(--button-border-width) solid var(--button-secondary-border-color);
     background: var(--button-secondary-background-fill);
     color: var(--button-secondary-text-color);
     border-radius: var(--button-large-radius);
-    padding: var(--button-large-padding);
     font-weight: var(--button-large-text-weight);
     font-size: var(--button-large-text-size);
     flex: 1 1 0%;
@@ -42,7 +41,42 @@
     cursor: pointer;
 }
 
-#website_button:hover,
+#website_button {
+    border: var(--button-border-width) solid var(--button-secondary-border-color);
+    background: #FF822D;
+    color: var(--button-secondary-text-color);
+    border-radius: var(--button-large-radius);
+    font-weight: var(--button-large-text-weight);
+    font-size: var(--button-large-text-size);
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    min-width: min(160px, 100%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--button-transition);
+    box-shadow: var(--button-shadow);
+    padding: var(--size-0-5) var(--size-2);
+    text-align: center;
+    cursor: pointer;
+}
+
 #youtube_button:hover {
     background: #FF822D !important;
+}
+
+#input_header,
+#output_header {
+    font-weight: bold;
+}
+
+.gradio-column .dropdown-arrow.svelte-p5edak {
+    fill: #FF822D;
+    margin-right: var(--size-2);
+    width: var(--size-5);
+}
+
+hr.rounded {
+    margin-bottom: 5vh;
+
 }
