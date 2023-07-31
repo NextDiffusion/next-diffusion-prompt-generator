@@ -174,7 +174,7 @@ def on_ui_tabs():
                     
                     with gr.Row(): 
                         gr.HTML('''
-                        <h3>Stable Diffusion Tutorials⚡:</h3>
+                        <h3>Stable Diffusion Tutorials⚡</h3>
                         <container>
                             <a href="https://nextdiffusion.ai" target="_blank">
                                 <button id="website_button" class="external-link">Website</button>
