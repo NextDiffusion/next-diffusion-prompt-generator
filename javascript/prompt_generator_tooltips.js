@@ -6,7 +6,7 @@ prompt_generator_titles = {
 	"Style": "Determines the main style for the prompt output",
 	"Lightning": "Represents the lightning strategy used for the prompt output",
 	"Lens": "Specifies the lens parameter used for the prompt output",
-	"Include Negative Prompt?": "Checked: Default negative prompt sent. Unchecked: Empty string sent."
+	"Include Negative Prompt": "Checked: Default negative prompt sent. Unchecked: Empty string sent."
 }
 
 onUiUpdate(function () {
