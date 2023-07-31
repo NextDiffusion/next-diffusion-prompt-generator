@@ -2104,153 +2104,153 @@
     ],
     "women": [
         [
-            "African American",
-            "Black",
+            "African American Woman",
+            "Black Woman",
             "Afro-American",
-            "African descent",
-            "Melanated",
-            "Black American"
+            "African descent Woman",
+            "Melanated Woman",
+            "Black American Woman"
         ],
         [
             "Latina",
-            "Hispanic",
-            "Latinx",
+            "Hispanic Woman",
+            "Latinx Woman",
             "Chicana",
-            "Mexican American",
-            "Hispanic-Latina"
+            "Mexican American Woman",
+            "Hispanic-Latina Woman"
         ],
         [
-            "Asian",
+            "Asian Woman",
             "East Asian",
-            "South Asian",
-            "Southeast Asian",
+            "South Asian Woman",
+            "Southeast Asian Woman",
             "Asian American",
-            "Oriental"
+            "Oriental Woman"
         ],
         [
-            "Thai",
+            "Thai Woman",
             "Siamese",
-            "Thailand national",
-            "Thai descent",
+            "Thailand national Woman",
+            "Thai descent Woman",
             "Thai woman",
             "Thai people"
         ],
         [
             "Native American",
-            "Indigenous",
-            "First Nations",
+            "Indigenous Woman",
+            "First Nations Woman",
             "Native tribe member",
-            "American Indian",
-            "Aboriginal"
+            "American Indian Woman",
+            "Aboriginal Woman"
         ],
         [
-            "Caucasian",
-            "White",
+            "Caucasian Woman",
+            "White Woman",
             "European descent",
-            "White American",
-            "Caucasian ethnicity",
+            "White American Woman",
+            "Caucasian ethnicity Woman",
             "White/Caucasian"
         ],
         [
-            "Middle Eastern",
-            "Arab",
-            "Arabian",
-            "Middle Easterner",
+            "Middle Eastern Woman",
+            "Arab Woman",
+            "Arabian Woman",
+            "Middle Easterner Woman",
             "Levantine",
             "Persian"
         ],
         [
-            "Indian",
-            "South Asian",
-            "Desi",
+            "Indian Woman",
+            "South Asian Woman",
+            "Desi Woman",
             "Hindustani",
-            "Indian American",
+            "Indian American Woman",
             "Bharatiya"
         ],
         [
-            "Afro-Latina",
+            "Afro-Latina Woman",
             "Black Hispanic",
-            "Afro-Latinx",
+            "Afro-Latinx Woman",
             "Black Latina",
-            "African diaspora",
-            "Afro-Latin"
+            "African diaspora Woman",
+            "Afro-Latin Woman"
         ],
         [
             "Pacific Islander",
-            "Polynesian",
-            "Melanesian",
-            "Micronesian",
+            "Polynesian Woman",
+            "Melanesian Woman",
+            "Micronesian Woman",
             "Pacific Islander American",
-            "Oceanian"
+            "Oceanian Woman"
         ],
         [
-            "Japanese",
-            "Nihonjin",
+            "Japanese Woman",
+            "Nihonjin Woman",
             "Japanese national",
             "Japanese descent",
             "Japanese woman",
-            "Yamato"
+            "Yamato Woman"
         ],
         [
             "Chinese",
-            "Han Chinese",
-            "Chinese national",
-            "Chinese descent",
+            "Han Chinese Woman",
+            "Chinese national Woman",
+            "Chinese descent Woman",
             "Chinese woman",
             "Zhongguoren"
         ],
         [
             "Korean",
-            "Hanguk saram",
-            "Korean national",
-            "Korean descent",
+            "Hanguk saram Woman",
+            "Korean national Woman",
+            "Korean descent Woman",
             "Korean woman",
             "Joseonjok"
         ],
         [
             "Vietnamese",
-            "Viet",
-            "Vietnamese national",
-            "Vietnamese descent",
+            "Viet Woman",
+            "Vietnamese national Woman",
+            "Vietnamese descent Woman",
             "Vietnamese woman",
             "Kinh"
         ],
         [
             "Filipino",
-            "Pinoy",
+            "Pinoy Woman",
             "Filipino national",
-            "Filipino descent",
+            "Filipino descent Woman",
             "Filipino woman",
             "Tagalog"
         ],
         [
             "Mexican",
-            "Mexicana",
+            "Mexicana Woman",
             "Mexican national",
             "Mexican descent",
             "Mexican woman",
-            "Chicana"
+            "Chicana Woman"
         ],
         [
             "Brazilian",
-            "Brasileira",
+            "Brasileira Woman",
             "Brazilian national",
             "Brazilian descent",
             "Brazilian woman",
-            "Lusobrazilian"
+            "Lusobrazilian Woman"
         ],
         [
             "Russian",
             "Russkiy",
-            "Russian national",
-            "Russian descent",
+            "Russian national Woman",
+            "Russian descent Woman",
             "Russian woman",
             "Rus"
         ],
         [
             "French",
             "Française",
-            "French national",
+            "French national Woman",
             "French descent",
             "French woman",
             "Gallic"
@@ -2258,7 +2258,7 @@
         [
             "British",
             "Briton",
-            "British national",
+            "British national Woman",
             "British descent",
             "British woman",
             "Brit"
