@@ -41,3 +41,8 @@
     text-align: center;
     cursor: pointer;
 }
+
+#website_button:hover,
+#youtube_button:hover {
+    background: #FF822D !important;
+}
