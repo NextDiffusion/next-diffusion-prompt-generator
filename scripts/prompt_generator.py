@@ -9,12 +9,12 @@ import modules.scripts as scripts
 
 result_prompt = ""
 base_dir = scripts.basedir()
-dropdown_options_file = Path(base_dir, "dropdown_options.json")
-category_data_file = Path(base_dir, "category_data.json")
-style_data_file = Path(base_dir, "style_data.json")
-prefix_data_file = Path(base_dir, "prefix_data.json")
-lightning_data_file = Path(base_dir, "lightning_data.json")
-lens_data_file = Path(base_dir, "lens_data.json")
+dropdown_options_file = Path(base_dir, "json/dropdown_options.json")
+category_data_file = Path(base_dir, "json/category_data.json")
+style_data_file = Path(base_dir, "json/style_data.json")
+prefix_data_file = Path(base_dir, "json/prefix_data.json")
+lightning_data_file = Path(base_dir, "json/lightning_data.json")
+lens_data_file = Path(base_dir, "json/lens_data.json")
 
 
 class Model:

@@ -1,0 +1,17 @@
+/* Apply background color to the button */
+#generate_button {
+    background-color: #FF822D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Apply custom appearance when the checkbox is checked */
+input[type="checkbox"]:checked {
+    background-color: #FF822D !important;
+    color: #FF822D !important;
+    border-color: #FF822D !important;
+}
