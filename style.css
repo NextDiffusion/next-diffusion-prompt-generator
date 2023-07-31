@@ -43,7 +43,7 @@
 }
 
 
-#website_button,
+#website_button:hover,
 #youtube_button:hover {
     background: #FF822D !important;
 }
