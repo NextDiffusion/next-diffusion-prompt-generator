@@ -31,7 +31,7 @@ After adjusting the input values to your preference, you are ready to click on t
 
 On the right side you have the **Output** section:
 
-- **Generate**: When clicked this will trigger the prompt generator to create a randomized output using a preset dataset.
+- **Generate (Button)**: When clicked this will trigger the prompt generator to create a randomized output using a preset dataset.
 - **Generated Prompt (Textbox)**: A textbox where the generated prompt will appear after clicking the "Generate" button.
 - **Include Negative Prompt (Checkbox)**: When this checkbox is checked, which is de the default, will send a default negative prompt along the generated prompt.
 - **Send to txt2img (Button)**: This will send the "Generated Prompt" to the txt2img tab in Stable Diffusion UI.
