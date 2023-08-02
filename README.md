@@ -11,7 +11,7 @@ Adds a 'Next Diffusion' tab to the webui that allows the user to generate a prom
 1. Open your Stable Diffusion Web UI.
 2. Click on the "Extensions" tab.
 3. Navigate to the "Install from URL" subsection.
-4. Paste the following URt: https://github.com/NextDiffusion/next-diffusion-prompt-generator
+4. Paste the following URL: https://github.com/NextDiffusion/next-diffusion-prompt-generator
 5. Click on the "Install" button.
 6. After installation go to the "Installed" tab and click on "Apply and restart UI".
 
