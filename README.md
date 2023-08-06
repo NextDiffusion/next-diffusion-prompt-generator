@@ -44,4 +44,4 @@ On the right side you have the **Output** section:
 
 ## Credits
 
-All Credits goes to: [Next Diffusion](https://www.nextdiffusion.ai/)
+[Next Diffusion](https://www.nextdiffusion.ai/) ❤️
