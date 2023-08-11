@@ -1,6 +1,5 @@
 import json
 import random
-from tkinter import TRUE
 import gradio as gr
 import modules
 from pathlib import Path
