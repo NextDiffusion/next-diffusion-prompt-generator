@@ -1,5 +1,6 @@
 {
     "category": [
+        "None",
         "Random",
         "Animal",
         "Anime",
@@ -12,6 +13,7 @@
         "Women"
     ],
     "style": [
+        "None",
         "Random",
         "3D style",
         "Abstract",
@@ -35,6 +37,7 @@
         "Water color painting"
     ],
     "lightning": [
+        "None",
         "Random",
         "Accent lighting",
         "Back-light",
@@ -80,6 +83,7 @@
         "Waning light"
     ],
     "lens": [
+        "None",
         "Random",
         "35mm",
         "50mm",

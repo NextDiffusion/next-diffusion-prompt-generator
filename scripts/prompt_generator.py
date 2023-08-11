@@ -89,7 +89,9 @@ def generate_prompt_output(*args):
     with open(category_path, 'r') as f2:
         category_data = json.load(f2)
     
-    if category == "random":
+    if category == "none":
+        category_prompt = ""
+    elif category == "random":
         category_prompt = get_random_prompt(category_data)
     else:
         category_prompt = get_correct_prompt(category_data, category)
@@ -98,8 +100,10 @@ def generate_prompt_output(*args):
     # Open style_data.json and grab correct text
     with open(style_path, 'r') as f3:
         style_data = json.load(f3)
-    
-    if style == "random":
+        
+    if style == "none":
+        style_prompt = ""
+    elif style == "random":
         style_prompt = get_random_prompt(style_data)
     else:
         style_prompt = get_correct_prompt(style_data, style)
@@ -107,8 +111,10 @@ def generate_prompt_output(*args):
     # Open lightning_data.json and grab correct text
     with open(lightning_path, 'r') as f4:
         lightning_data = json.load(f4)
-    
-    if lightning == "random":
+        
+    if lightning == "none":
+        lightning_prompt = ""
+    elif lightning == "random":
         lightning_prompt = get_random_prompt(lightning_data)
     else:
         lightning_prompt = get_correct_prompt(lightning_data, lightning)
@@ -116,15 +122,26 @@ def generate_prompt_output(*args):
     # Open lens_data.json and grab correct text
     with open(lens_path, 'r') as f5:
         lens_data = json.load(f5)
-    
-    if lens == "random":
+        
+    if lens == "none":
+        lens_prompt = ""
+    elif lens == "random":
         lens_prompt = get_random_prompt(lens_data)
     else:
         lens_prompt = get_correct_prompt(lens_data, lens)
 
 
     prompt_output = modified_prefix_prompt, category_prompt, style_prompt, lightning_prompt, lens_prompt
-    final_output = ", ".join(", ".join(sublist) for sublist in prompt_output)
+    prompt_strings = []
+
+    for sublist in prompt_output:
+        # Join the sublist elements into a single string
+        prompt_string = ", ".join(str(item) for item in sublist)
+        if prompt_string:  # Check if the prompt_string is not empty
+            prompt_strings.append(prompt_string)
+
+    # Join the non-empty prompt_strings
+    final_output = ", ".join(prompt_strings)
 
     return final_output
 
@@ -153,25 +170,25 @@ def on_ui_tabs():
                         
                         category_dropdown = gr.Dropdown(
                             choices=category_choices,
-                            value=category_choices[0],
+                            value=category_choices[1],
                             label="Category", show_label=True
                         )
 
                         style_dropdown = gr.Dropdown(
                             choices=style_choices,
-                            value=style_choices[0],
+                            value=style_choices[1],
                             label="Style", show_label=True
                         )
                     with gr.Row():    
                         lightning_dropdown = gr.Dropdown(
                             choices=lightning_choices,
-                            value=lightning_choices[0],
+                            value=lightning_choices[1],
                             label="Lightning", show_label=True
                         )
 
                         lens_dropdown = gr.Dropdown(
                             choices=lens_choices,
-                            value=lens_choices[0],
+                            value=lens_choices[1],
                             label="Lens", show_label=True
                         )
                     with gr.Row(): 
