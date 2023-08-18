@@ -203,7 +203,7 @@ def on_ui_tabs():
                             <a href="https://nextdiffusion.ai" target="_blank">
                                 <button id="website_button" class="external-link">Website</button>
                             </a>
-                            <a href="https://www.youtube.com/@NextDiffusion" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCd9UIUkLnjE-Fj-CGFdU74Q?sub_confirmation=1" target="_blank">
                                 <button id="youtube_button" class="external-link">YouTube</button>
                             </a>
                         </container>
