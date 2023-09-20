@@ -42,6 +42,7 @@ On the right side you have the **Output** section:
 
 
 
-## Credits
+## Credits: **Next Diffusion** ❤️
 
-[Next Diffusion](https://www.nextdiffusion.ai/) ❤️
+- [Next Diffusion Website](https://www.nextdiffusion.ai/) 
+- [Next Diffusion Youtube](https://www.youtube.com/channel/UCd9UIUkLnjE-Fj-CGFdU74Q?sub_confirmation=1) 
