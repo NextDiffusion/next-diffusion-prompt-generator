@@ -2263,5 +2263,167 @@
             "British woman",
             "Brit"
         ]
+    ],
+    "men": [
+        [
+            "African American Man",
+            "Black Man",
+            "Afro-American",
+            "African descent Man",
+            "Melanated Man",
+            "Black American Man"
+        ],
+        [
+            "Latino",
+            "Hispanic Man",
+            "Latinx Man",
+            "Chicano",
+            "Mexican American Man",
+            "Hispanic-Latino Man"
+        ],
+        [
+            "Asian Man",
+            "East Asian",
+            "South Asian Man",
+            "Southeast Asian Man",
+            "Asian American",
+            "Oriental Man"
+        ],
+        [
+            "Thai Man",
+            "Siamese",
+            "Thailand national Man",
+            "Thai descent Man",
+            "Thai man",
+            "Thai people"
+        ],
+        [
+            "Native American",
+            "Indigenous Man",
+            "First Nations Man",
+            "Native tribe member",
+            "American Indian Man",
+            "Aboriginal Man"
+        ],
+        [
+            "Caucasian Man",
+            "White Man",
+            "European descent",
+            "White American Man",
+            "Caucasian ethnicity Man",
+            "White/Caucasian"
+        ],
+        [
+            "Middle Eastern Man",
+            "Arab Man",
+            "Arabian Man",
+            "Middle Easterner Man",
+            "Levantine",
+            "Persian"
+        ],
+        [
+            "Indian Man",
+            "South Asian Man",
+            "Desi Man",
+            "Hindustani",
+            "Indian American Man",
+            "Bharatiya"
+        ],
+        [
+            "Afro-Latino Man",
+            "Black Hispanic",
+            "Afro-Latinx Man",
+            "Black Latino",
+            "African diaspora Man",
+            "Afro-Latin Man"
+        ],
+        [
+            "Pacific Islander",
+            "Polynesian Man",
+            "Melanesian Man",
+            "Micronesian Man",
+            "Pacific Islander American",
+            "Oceanian Man"
+        ],
+        [
+            "Japanese Man",
+            "Nihonjin Man",
+            "Japanese national",
+            "Japanese descent",
+            "Japanese man",
+            "Yamato Man"
+        ],
+        [
+            "Chinese",
+            "Han Chinese Man",
+            "Chinese national Man",
+            "Chinese descent Man",
+            "Chinese man",
+            "Zhongguoren"
+        ],
+        [
+            "Korean",
+            "Hanguk saram Man",
+            "Korean national Man",
+            "Korean descent Man",
+            "Korean man",
+            "Joseonjok"
+        ],
+        [
+            "Vietnamese",
+            "Viet Man",
+            "Vietnamese national Man",
+            "Vietnamese descent Man",
+            "Vietnamese man",
+            "Kinh"
+        ],
+        [
+            "Filipino",
+            "Pinoy Man",
+            "Filipino national",
+            "Filipino descent Man",
+            "Filipino man",
+            "Tagalog"
+        ],
+        [
+            "Mexican",
+            "Mexicano Man",
+            "Mexican national",
+            "Mexican descent",
+            "Mexican man",
+            "Chicano Man"
+        ],
+        [
+            "Brazilian",
+            "Brasileiro Man",
+            "Brazilian national",
+            "Brazilian descent",
+            "Brazilian man",
+            "Lusobrazilian Man"
+        ],
+        [
+            "Russian",
+            "Russkiy",
+            "Russian national Man",
+            "Russian descent Man",
+            "Russian man",
+            "Rus"
+        ],
+        [
+            "French",
+            "Français",
+            "French national Man",
+            "French descent",
+            "French man",
+            "Gallic"
+        ],
+        [
+            "British",
+            "Briton",
+            "British national Man",
+            "British descent",
+            "British man",
+            "Brit"
+        ]
     ]
 }

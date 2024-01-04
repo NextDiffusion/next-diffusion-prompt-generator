@@ -1,5 +1,6 @@
 {
     "category": [
+        "None",
         "Random",
         "Animal",
         "Anime",
@@ -9,10 +10,13 @@
         "Landscape",
         "Plant",
         "Vehicle",
-        "Women"
+        "Women",
+        "Men"
     ],
     "style": [
+        "None",
         "Random",
+        "3D style",
         "Abstract",
         "Chalk painting",
         "Color splash",
@@ -33,7 +37,8 @@
         "Wall Graffiti",
         "Water color painting"
     ],
-    "lightning": [
+    "lighting": [
+        "None",
         "Random",
         "Accent lighting",
         "Back-light",
@@ -79,6 +84,7 @@
         "Waning light"
     ],
     "lens": [
+        "None",
         "Random",
         "35mm",
         "50mm",
