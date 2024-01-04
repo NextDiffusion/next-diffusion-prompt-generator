@@ -20,13 +20,13 @@
     border-color: #FF822D !important;
 }
 
+
 #website_button,
 #youtube_button {
     border: var(--button-border-width) solid var(--button-secondary-border-color);
     background: var(--button-secondary-background-fill);
     color: var(--button-secondary-text-color);
     border-radius: var(--button-large-radius);
-    padding: var(--button-large-padding);
     font-weight: var(--button-large-text-weight);
     font-size: var(--button-large-text-size);
     flex: 1 1 0%;
@@ -42,7 +42,24 @@
     cursor: pointer;
 }
 
+
 #website_button:hover,
 #youtube_button:hover {
     background: #FF822D !important;
+}
+
+#input_header,
+#output_header {
+    font-weight: bold;
+}
+
+.gradio-column .dropdown-arrow.svelte-p5edak {
+    fill: #FF822D;
+    margin-right: var(--size-2);
+    width: var(--size-5);
+}
+
+hr.rounded {
+    margin-bottom: 5vh;
+
 }
