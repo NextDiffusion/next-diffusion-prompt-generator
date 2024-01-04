@@ -12,7 +12,7 @@ dropdown_options_file = Path(base_dir, "json/dropdown_options.json")
 category_data_file = Path(base_dir, "json/category_data.json")
 style_data_file = Path(base_dir, "json/style_data.json")
 prefix_data_file = Path(base_dir, "json/prefix_data.json")
-lightning_data_file = Path(base_dir, "json/lightning_data.json")
+lighting_data_file = Path(base_dir, "json/lighting_data.json")
 lens_data_file = Path(base_dir, "json/lens_data.json")
 
 
@@ -32,9 +32,9 @@ def populate_dropdown_options():
         data = json.load(f)
     category_choices = data["category"]
     style_choices = data["style"]
-    lightning_choices = data["lighting"]
+    lighting_choices = data["lighting"]
     lens_choices = data["lens"]
-    return tuple(category_choices), tuple(style_choices), tuple(lightning_choices), tuple(lens_choices),
+    return tuple(category_choices), tuple(style_choices), tuple(lighting_choices), tuple(lens_choices),
 
 
 def add_to_prompt(*args):
@@ -67,16 +67,16 @@ def generate_prompt_output(*args):
     prefix_path = prefix_data_file
     category_path = category_data_file
     style_path = style_data_file
-    lightning_path = lightning_data_file
+    lighting_path = lighting_data_file
     lens_path = lens_data_file
 
     # destructure args
-    category, style, lightning, lens, negative_prompt = args
+    category, style, lighting, lens, negative_prompt = args
 
     # Convert variables to lowercase
     category = category.lower()
     style = style.lower()
-    lightning = lightning.lower()
+    lighting = lighting.lower()
     lens = lens.lower()
 
     # Open category_data.json and grab correct text
@@ -88,11 +88,7 @@ def generate_prompt_output(*args):
     # Open category_data.json and grab correct text
     with open(category_path, 'r') as f2:
         category_data = json.load(f2)
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 6d0f6dad83a274e61c63cb93291b7d35fe4da478
     if category == "none":
         category_prompt = ""
     elif category == "random":
@@ -103,7 +99,7 @@ def generate_prompt_output(*args):
     # Open style_data.json and grab correct text
     with open(style_path, 'r') as f3:
         style_data = json.load(f3)
-        
+
     if style == "none":
         style_prompt = ""
     elif style == "random":
@@ -111,21 +107,21 @@ def generate_prompt_output(*args):
     else:
         style_prompt = get_correct_prompt(style_data, style)
 
-    # Open lightning_data.json and grab correct text
-    with open(lightning_path, 'r') as f4:
-        lightning_data = json.load(f4)
-        
-    if lightning == "none":
-        lightning_prompt = ""
-    elif lightning == "random":
-        lightning_prompt = get_random_prompt(lightning_data)
+    # Open lighting_data.json and grab correct text
+    with open(lighting_path, 'r') as f4:
+        lighting_data = json.load(f4)
+
+    if lighting == "none":
+        lighting_prompt = ""
+    elif lighting == "random":
+        lighting_prompt = get_random_prompt(lighting_data)
     else:
-        lightning_prompt = get_correct_prompt(lightning_data, lightning)
+        lighting_prompt = get_correct_prompt(lighting_data, lighting)
 
     # Open lens_data.json and grab correct text
     with open(lens_path, 'r') as f5:
         lens_data = json.load(f5)
-        
+
     if lens == "none":
         lens_prompt = ""
     elif lens == "random":
@@ -133,7 +129,7 @@ def generate_prompt_output(*args):
     else:
         lens_prompt = get_correct_prompt(lens_data, lens)
 
-    prompt_output = modified_prefix_prompt, category_prompt, style_prompt, lightning_prompt, lens_prompt
+    prompt_output = modified_prefix_prompt, category_prompt, style_prompt, lighting_prompt, lens_prompt
     prompt_strings = []
 
     for sublist in prompt_output:
@@ -160,13 +156,13 @@ def on_ui_tabs():
         with gr.Tab("Prompt Generator"):
             with gr.Row():  # Use Row to arrange two columns side by side
                 with gr.Column():  # Left column for dropdowns
-                    category_choices, style_choices, lightning_choices, lens_choices = populate_dropdown_options()
-                    
+                    category_choices, style_choices, lighting_choices, lens_choices = populate_dropdown_options()
+
                     with gr.Row():
                         gr.HTML('''<h2 id="input_header">Input 👇</h2>''')
                     with gr.Row().style(equal_height=True):  # Place dropdowns side by side
                         # Create a dropdown to select
-                        
+
                         category_dropdown = gr.Dropdown(
                             choices=category_choices,
                             value=category_choices[1],
@@ -179,10 +175,10 @@ def on_ui_tabs():
                             label="Style", show_label=True
                         )
                     with gr.Row():
-                        lightning_dropdown = gr.Dropdown(
-                            choices=lightning_choices,
-                            value=lightning_choices[1],
-                            label="Lightning", show_label=True
+                        lighting_dropdown = gr.Dropdown(
+                            choices=lighting_choices,
+                            value=lighting_choices[1],
+                            label="Lighting", show_label=True
                         )
 
                         lens_dropdown = gr.Dropdown(
@@ -190,12 +186,12 @@ def on_ui_tabs():
                             value=lens_choices[1],
                             label="Lens", show_label=True
                         )
-                    with gr.Row(): 
+                    with gr.Row():
                         gr.HTML('''
                         <hr class="rounded" id="divider">
                     ''')
                     with gr.Row():
-                        gr.HTML('''<h2 id="input_header">Links</h2>''')    
+                        gr.HTML('''<h2 id="input_header">Links</h2>''')
                     with gr.Row():
                         gr.HTML('''
                         <h3>Stable Diffusion Tutorials⚡</h3>
@@ -213,9 +209,12 @@ def on_ui_tabs():
                     # Add a Textbox to display the generated text
                     with gr.Row():
                         gr.HTML('''<h2 id="output_header">Output 👋</h2>''')
-                    result_textbox = gr.Textbox(label="Generated Prompt", lines=3)
-                    use_default_negative_prompt = gr.Checkbox(label="Include Negative Prompt", value=True, interactive=True, elem_id="negative_prompt_checkbox")
-                    setattr(use_default_negative_prompt,"do_not_save_to_config",True)
+                    result_textbox = gr.Textbox(
+                        label="Generated Prompt", lines=3)
+                    use_default_negative_prompt = gr.Checkbox(
+                        label="Include Negative Prompt", value=True, interactive=True, elem_id="negative_prompt_checkbox")
+                    setattr(use_default_negative_prompt,
+                            "do_not_save_to_config", True)
                     with gr.Row():
                         txt2img = gr.Button("Send to txt2img")
                         img2img = gr.Button("Send to img2img")
@@ -229,7 +228,7 @@ def on_ui_tabs():
 
         # Register the callback for the Generate button
         generate_button.click(fn=generate_prompt_output, inputs=[
-                              category_dropdown, style_dropdown, lightning_dropdown, lens_dropdown, use_default_negative_prompt], outputs=[result_textbox])
+                              category_dropdown, style_dropdown, lighting_dropdown, lens_dropdown, use_default_negative_prompt], outputs=[result_textbox])
 
     return (prompt_generator, "Next Diffusion ⚡", "Next Diffusion ⚡"),
 
